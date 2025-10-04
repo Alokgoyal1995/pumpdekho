@@ -97,6 +97,7 @@
 
 <body class="bg-light-custom">
     <header>
+
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm fixed-top">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand primary-color" href="#">Krishna Marketing</a>
@@ -107,13 +108,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">ABOUT US</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">WHY US</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">GALLERY</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">TESTIMONIALS</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">CONTACT US</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><span class="material-icons">person</span></a>
+                        <li class="nav-item"><a class="nav-link" href="#service">SERVICES</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">ABOUT US</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#whyus">WHY US</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#product">PRODUCTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#gallary">GALLERY</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testi">TESTIMONIALS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contactus">CONTACT US</a></li>
                         </li>
                     </ul>
                 </div>
@@ -122,70 +123,128 @@
     </header>
 
     <main>
-        <section class="position-relative d-flex align-items-center justify-content-center text-center text-white"
-            style="height: 60vh; background-image: url('./assets/image/Building-Services.jpg'); background-size: cover; background-position: center;">
-            <div class="hero-overlay position-absolute w-100 h-100"></div>
-            <div class="position-relative z-1 px-3">
-                <h1 class="display-4 fw-bold mb-4">Services And Products <br /> You Will Love</h1>
-                <a class="btn btn-primary btn-lg" href="#">Enquire Now</a>
+        <section class="position-relative hero-section" style="height: 70vh; overflow: hidden;">
+            <!-- Reduced height and added overflow hidden for clean edges -->
+            <div id="heroCarousel" class="carousel slide carousel-fade h-100" data-bs-ride="carousel"
+                data-bs-interval="4000">
+                <div class="carousel-inner h-100">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active h-100 d-flex align-items-center justify-content-center text-center text-white px-3"
+                        style="background-image: url('./assets/image/banner-2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"
+                            style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);">
+                        </div> <!-- Gradient overlay for better readability -->
+                        <div class="position-relative z-2 w-100 px-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-10">
+                                    <h1 class="display-3 fw-bold mb-3 lh-1">SOLAR POWERED PUMPS</h1>
+                                    <p class="lead mb-2 fs-5">Complete range of solar powered pumps and motors certified
+                                        by MNRE</p>
+                                    <p class="fs-6 opacity-90 mb-0">Supplied with PV module and controller</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item h-100 d-flex align-items-center justify-content-center text-center text-white px-3"
+                        style="background-image: url('./assets/image/banner-1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"
+                            style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);">
+                        </div>
+                        <div class="position-relative z-2 w-100 px-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-10">
+                                    <h1 class="display-3 fw-bold mb-3 lh-1">ACCESSORIES</h1>
+                                    <p class="lead mb-0 fs-5">We offer a wide range of cables, control panels and pipes
+                                        under the AQUATEX brand</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item h-100 d-flex align-items-center justify-content-center text-center text-white px-3"
+                        style="background-image: url('./assets/image/banner-3.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                        <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-none d-md-block"
+                            style="background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);">
+                        </div>
+                        <div class="position-relative z-2 w-100 px-4">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-10">
+                                    <h1 class="display-3 fw-bold mb-3 lh-1">TEXMO BOREWELL SUBMERSIBLE PUMPSETS</h1>
+                                    <p class="lead mb-2 fs-5">Largest manufacturers of high performance bore-well
+                                        submersible pumps in India
+
+                                    </p>
+                                    <p class="fs-6 opacity-90 mb-0">Known for reliability in the toughest working
+                                        conditions
+
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="py-5 bg-light-custom">
+        <section class="py-5 bg-light-custom" id="service">
             <div class="container px-4 px-lg-5">
                 <h2 class="display-5 fw-bold text-center mb-5 text-heading-custom">Services</h2>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6">
                         <div class="card h-100 service-card border-0 shadow">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFuVH9cyD_uP_otmkQjjcmzrJKnW4t8BdALv1i6P_2m2AsC4expt7iLsJk5slv_atP2TwD-i3Hj7I1SrHSSqh8RPHiHdxhNsHEFHYTRqsUbaFd7Hc59NRdf3SwMTSCFtkhYVCs_O6Jz1YGUbJaEAd27SxtMmzZz4ksjHZE1CHhUBLAr4cfVbZP0O0xEmDI1ENCLZhNbgO5V3ysNm4-khhdQL7ry8FGJ-cimIZFzmSxqZYiQghcxqdoSaTUL67uroNys2IEXFEFKhYG"
-                                class="card-img-top" alt="Consultation service image"
+                            <img src="./assets/image/10.webp" class="card-img-top" alt="Consultation service image"
                                 style="height: 12rem; object-fit: cover;">
                             <div class="card-body d-flex flex-column text-center">
                                 <h3 class="card-title fw-semibold text-heading-custom">Consultation</h3>
-                                <p class="card-text flex-grow-1">With immense industrial knowledge, our team of experts
-                                    provides perfect consultation for our clients to help them find their desired
-                                    products based on their needs.</p>
+                                <p class="card-text flex-grow-1">Owing to our huge industrial knowledge and rich
+                                    information, we are offering our customers with the best consultancy services. These
+                                    services are available in varied provisions as per the detailed needs of our
+                                    customers.</p>
                                 <a class="primary-color fw-semibold text-decoration-none" href="#">Enquire Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="card h-100 service-card border-0 shadow">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdzj8QsyMXz0q3cMxiDjw3ckCzMjUcErUXG_XzbA9ZNDRpfjCNAj-hxsx0fAoScnF6fMhtZgMl_rCNkqsBst0HrVk1fnbwuSvtBJkCeeNEUrDfubORWQCYMIPS9_AH6CH07OGTNObsd0KnszQILN-ptc7dvj1DCXNNzKZ9WtKCgLkxF0JYMdt3mC3vNkbzBzbat23fzK9WjcuPRqGwqo4EV0_ECJjMf_xU2Gxjo9IIy7ov3aN5T55mmOx7Kz1XQzcjU54lv_YU1I78"
-                                class="card-img-top" alt="Installation service image"
+                            <img src="./assets/image/11.webp" class="card-img-top" alt="Installation service image"
                                 style="height: 12rem; object-fit: cover;">
                             <div class="card-body d-flex flex-column text-center">
                                 <h3 class="card-title fw-semibold text-heading-custom">Installation</h3>
-                                <p class="card-text flex-grow-1">We provide installation service at our precious
-                                    consumers' end. The installation work is done by our professional technicians in a
-                                    perfect way. We apply no extra charges for this service.</p>
+                                <p class="card-text flex-grow-1">To meet the growing requirement of our precious
+                                    consumers, our firm offers Installation Services. This installation service is
+                                    reliable and available for patrons in the simplest way. We apply minimal chargers
+                                    for this service.</p>
                                 <a class="primary-color fw-semibold text-decoration-none" href="#">Enquire Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="card h-100 service-card border-0 shadow">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9qhz5gY_8KxJNmIChD7YusdkQUoX6tNNDaXA72Gnu6V_N4xAq7KCVvPAR-zr_WF20zuPNOnj-gP7BcWW4r0FIrVODrlNoAoK4ubbadai9_MUotstRqQzHt8-8WFNMRi1905nRIKDp6G3f7LgCGQn5xH8UH_ExlCIZl3Z765-ucT-wX31uHJtWqyGjCJtERa02llHxouvsFxyOZZvsna2p6BJFJkDFwcbFzRFGOt5qDZ1S-9OSutetEiGc1YcjeEs6nFQEyS9BZ7VP"
-                                class="card-img-top" alt="On-time delivery service image"
+                            <img src="./assets/image/12.webp" class="card-img-top" alt="On-time delivery service image"
                                 style="height: 12rem; object-fit: cover;">
                             <div class="card-body d-flex flex-column text-center">
                                 <h3 class="card-title fw-semibold text-heading-custom">On-Time Delivery</h3>
-                                <p class="card-text flex-grow-1">We provide a very fast and door-step delivery to our
-                                    patrons. We provide hassle-free shipping with the help of a very active and
-                                    efficient delivery team. We deliver the desired service on stipulated time.</p>
+                                <p class="card-text flex-grow-1">We hold expertise in providing doorstep delivery of the
+                                    services to our customers. By leveraging the breadth and reliability of our global
+                                    network, we make sure to deliver the desired service on stipulated time.</p>
                                 <a class="primary-color fw-semibold text-decoration-none" href="#">Enquire Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="card h-100 service-card border-0 shadow">
-                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA8gQl-rSYmITHVciehPxvECYzvPRyf0WimDTY_iQW6XuY-bxR9HMk1-jNIfSA90WuQJjrhS9JF6RWc88qPGMpFW6ycdINjUEmHPtjD7dX-pvZubSOyzsV5dXSKvCBod6qGlw3jQ9LtDv6PctacGS72uXKqmhbIiBy8K9U6MWghc-uIjEUpN_aNgPxC_XRSE9HVQdXI7bEUtyW3pREkoyttoefrMHDb2YIIzA0jZUQ_s0RcpfQbC2crtbXNLnSvBrgNZ8KCMNp_Gw-"
-                                class="card-img-top" alt="AMC service image" style="height: 12rem; object-fit: cover;">
+                            <img src="./assets/image/13.webp" class="card-img-top" alt="AMC service image"
+                                style="height: 12rem; object-fit: cover;">
                             <div class="card-body d-flex flex-column text-center">
                                 <h3 class="card-title fw-semibold text-heading-custom">AMC</h3>
-                                <p class="card-text flex-grow-1">We provide annual maintenance contracts (AMC) services
-                                    to our esteemed patrons. We take care of every detail related to the service and
-                                    also offer free service after customer's first service as per the norms.</p>
+                                <p class="card-text flex-grow-1">We are proficient to render all types of AMC Service.
+                                    This service is rendered under the guidance of skillful employees. To meet the
+                                    meticulous requirements and demands of our respected customers, we also customise
+                                    this service as per their necessities.</p>
                                 <a class="primary-color fw-semibold text-decoration-none" href="#">Enquire Now</a>
                             </div>
                         </div>
@@ -194,7 +253,7 @@
             </div>
         </section>
 
-        <section class="py-5 bg-white">
+        <section class="py-5 bg-white" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row align-items-center g-5">
                     <div class="col-md-6">
@@ -212,7 +271,7 @@
             </div>
         </section>
 
-        <section class="py-5 bg-light-custom">
+        <section class="py-5 bg-light-custom" id="whyus">
             <div class="container px-4 px-lg-5">
                 <h2 class="display-5 fw-bold text-center mb-5 text-heading-custom">Why Us</h2>
                 <div class="row g-4">
@@ -260,7 +319,292 @@
             </div>
         </section>
 
-        <section class="py-5 bg-white">
+        <!-- New Products Section - Add this before the Gallery or Testimonials section in your main content -->
+        <section class="py-5 bg-light-custom" id="product">
+            <div class="container px-4 px-lg-5">
+                <h2 class="display-5 fw-bold text-center mb-5 text-heading-custom">Our Products</h2>
+                <div class="row g-4">
+                    <!-- Product 1: 2 HP High Pressure Solar Pump -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow product-card position-relative overflow-hidden">
+                            <img src="https://placehold.co/400x300?text=2+HP+Solar+Pump" class="card-img-top w-100"
+                                alt="2 HP High Pressure Solar Pump" style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-heading-custom mb-3">2 HP High Pressure Solar Pump
+                                </h5>
+                                <p class="card-text flex-grow-1">Introducing our durable 2 HP solar pump designed for
+                                    efficient agricultural irrigation. Powered by solar energy, it ensures reliable
+                                    water flow for your fields.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold fs-4 text-primary">₹25,000</span>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#productModal1">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: 3 HP Stainless Steel Submersible Pump -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow product-card position-relative overflow-hidden">
+                            <img src="https://placehold.co/400x300?text=3+HP+Submersible+Pump"
+                                class="card-img-top w-100" alt="3 HP Stainless Steel Submersible Pump"
+                                style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-heading-custom mb-3">3 HP Stainless Steel Submersible
+                                    Pump</h5>
+                                <p class="card-text flex-grow-1">High-performance submersible pump for deep wells, built
+                                    with corrosion-resistant stainless steel for long-lasting use in harsh environments.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold fs-4 text-primary">₹35,000</span>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#productModal2">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: 1.5 HP Vertical Inline Pump -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow product-card position-relative overflow-hidden">
+                            <img src="https://placehold.co/400x300?text=1.5+HP+Inline+Pump" class="card-img-top w-100"
+                                alt="1.5 HP Vertical Inline Pump" style="height: 250px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold text-heading-custom mb-3">1.5 HP Vertical Inline Pump</h5>
+                                <p class="card-text flex-grow-1">Compact vertical inline pump ideal for domestic and
+                                    small-scale irrigation, offering quiet operation and energy efficiency.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="fw-bold fs-4 text-primary">₹18,000</span>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#productModal3">View Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal 1: 2 HP High Pressure Solar Pump -->
+        <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold text-heading-custom" id="productModalLabel1">2 HP High Pressure
+                            Solar Pump</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://placehold.co/400x300?text=2+HP+Solar+Pump"
+                                    class="img-fluid rounded shadow" alt="2 HP High Pressure Solar Pump">
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bold text-primary mb-3">₹25,000</h6>
+                                <div class="mb-3">
+                                    <h6 class="fw-semibold text-heading-custom">Specifications</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Size:</strong> 2 inch</li>
+                                        <li><strong>Pressure Grade:</strong> 50 psi</li>
+                                        <li><strong>Automation Grade:</strong> Automatic</li>
+                                        <li><strong>Speed:</strong> 2900 RPM</li>
+                                        <li><strong>Flow Rate:</strong> 30 m³/hr</li>
+                                        <li><strong>Power:</strong> 1.5 HP</li>
+                                        <li><strong>Power Source:</strong> Solar</li>
+                                        <li><strong>Material:</strong> Stainless Steel</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-success me-2"
+                                    onclick="window.open('mailto:sample@example.com?subject=Enquiry for 2 HP Solar Pump', '_blank')">
+                                    <i class="fas fa-envelope me-1"></i> Send Enquiry
+                                </button>
+                                <button class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <h6 class="fw-semibold text-heading-custom mb-2">Description</h6>
+                                <p class="text-muted">Introducing the 2 HP High Pressure Solar Pump, designed
+                                    specifically for the reliable needs of Indian farmers. Crafted with durable
+                                    construction, this submersible solar pump harnesses solar energy to deliver optimal
+                                    water flow for agricultural irrigation. Featuring automatic operation, it minimizes
+                                    manual intervention while ensuring high efficiency. With its robust stainless steel
+                                    build, it withstands harsh outdoor conditions, providing up to 30 m³/hr flow at 50
+                                    psi pressure. Ideal for flood irrigation, drip systems, and livestock watering, this
+                                    energy-efficient solution empowers sustainable farming practices.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <h6 class="fw-semibold text-heading-custom mb-2">Reviews & Ratings</h6>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="text-warning me-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="fw-bold">4.5 / 5</span>
+                                    <span class="text-muted ms-2">(12 reviews)</span>
+                                </div>
+                                <p class="text-muted fst-italic">"Excellent pump for solar irrigation. Reliable and
+                                    efficient!" - Rajesh K.</p>
+                                <button class="btn btn-outline-secondary btn-sm">Rate & Write Review</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: 3 HP Stainless Steel Submersible Pump -->
+        <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold text-heading-custom" id="productModalLabel2">3 HP Stainless Steel
+                            Submersible Pump</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://placehold.co/400x300?text=3+HP+Submersible+Pump"
+                                    class="img-fluid rounded shadow" alt="3 HP Stainless Steel Submersible Pump">
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bold text-primary mb-3">₹35,000</h6>
+                                <div class="mb-3">
+                                    <h6 class="fw-semibold text-heading-custom">Specifications</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Size:</strong> 4 inch</li>
+                                        <li><strong>Pressure Grade:</strong> 80 psi</li>
+                                        <li><strong>Automation Grade:</strong> Semi-Automatic</li>
+                                        <li><strong>Speed:</strong> 2800 RPM</li>
+                                        <li><strong>Flow Rate:</strong> 50 m³/hr</li>
+                                        <li><strong>Power:</strong> 3 HP</li>
+                                        <li><strong>Power Source:</strong> Electric</li>
+                                        <li><strong>Material:</strong> Stainless Steel</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-success me-2"
+                                    onclick="window.open('mailto:sample@example.com?subject=Enquiry for 3 HP Submersible Pump', '_blank')">
+                                    <i class="fas fa-envelope me-1"></i> Send Enquiry
+                                </button>
+                                <button class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <h6 class="fw-semibold text-heading-custom mb-2">Description</h6>
+                                <p class="text-muted">Our 3 HP Stainless Steel Submersible Pump is engineered for deep
+                                    borewells and demanding irrigation needs. With superior corrosion resistance and
+                                    high discharge rates, it's perfect for large-scale farming. Operates efficiently on
+                                    electric power, delivering consistent performance even in remote areas.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <h6 class="fw-semibold text-heading-custom mb-2">Reviews & Ratings</h6>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="text-warning me-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="fw-bold">5.0 / 5</span>
+                                    <span class="text-muted ms-2">(8 reviews)</span>
+                                </div>
+                                <p class="text-muted fst-italic">"Durable and powerful—transformed our irrigation
+                                    setup!" - Priya S.</p>
+                                <button class="btn btn-outline-secondary btn-sm">Rate & Write Review</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: 1.5 HP Vertical Inline Pump -->
+        <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold text-heading-custom" id="productModalLabel3">1.5 HP Vertical
+                            Inline Pump</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="https://placehold.co/400x300?text=1.5+HP+Inline+Pump"
+                                    class="img-fluid rounded shadow" alt="1.5 HP Vertical Inline Pump">
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bold text-primary mb-3">₹18,000</h6>
+                                <div class="mb-3">
+                                    <h6 class="fw-semibold text-heading-custom">Specifications</h6>
+                                    <ul class="list-unstyled">
+                                        <li><strong>Size:</strong> 1.5 inch</li>
+                                        <li><strong>Pressure Grade:</strong> 40 psi</li>
+                                        <li><strong>Automation Grade:</strong> Manual</li>
+                                        <li><strong>Speed:</strong> 3000 RPM</li>
+                                        <li><strong>Flow Rate:</strong> 20 m³/hr</li>
+                                        <li><strong>Power:</strong> 1.5 HP</li>
+                                        <li><strong>Power Source:</strong> Electric</li>
+                                        <li><strong>Material:</strong> Cast Iron</li>
+                                    </ul>
+                                </div>
+                                <button class="btn btn-success me-2"
+                                    onclick="window.open('mailto:sample@example.com?subject=Enquiry for 1.5 HP Inline Pump', '_blank')">
+                                    <i class="fas fa-envelope me-1"></i> Send Enquiry
+                                </button>
+                                <button class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <h6 class="fw-semibold text-heading-custom mb-2">Description</h6>
+                                <p class="text-muted">The 1.5 HP Vertical Inline Pump is a versatile choice for home and
+                                    garden use, providing steady water pressure with minimal noise. Easy to install and
+                                    maintain, it's suited for small farms and residential boosting systems.</p>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <h6 class="fw-semibold text-heading-custom mb-2">Reviews & Ratings</h6>
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="text-warning me-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="fw-bold">4.0 / 5</span>
+                                    <span class="text-muted ms-2">(15 reviews)</span>
+                                </div>
+                                <p class="text-muted fst-italic">"Great for daily use—affordable and reliable." - Amit
+                                    M.</p>
+                                <button class="btn btn-outline-secondary btn-sm">Rate & Write Review</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="py-5 bg-white" id="gallary">
             <div class="container px-4 px-lg-5">
                 <h2 class="display-5 fw-bold text-center mb-5 text-heading-custom">Gallery</h2>
                 <div class="row g-3">
@@ -308,7 +652,7 @@
             </div>
         </section>
 
-        <section class="py-5 bg-light-custom">
+        <section class="py-5 bg-light-custom" id="testi">
             <div class="container px-4 px-lg-5">
                 <h2 class="display-5 fw-bold mb-5 text-center text-heading-custom">Testimonials</h2>
                 <div id="testimonialCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel"
@@ -340,7 +684,7 @@
             </div>
         </section>
 
-        <section class="py-5 bg-white">
+        <section class="py-5 bg-white" id="contactus">
             <div class="container px-4 px-lg-5">
                 <h2 class="display-5 fw-bold text-center mb-5 text-heading-custom">Contact Us</h2>
                 <div class="row g-4 justify-content-center mb-5">
